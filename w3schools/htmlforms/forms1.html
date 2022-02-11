@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+</head>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 17px;
+    }
+</style>
+<body>
+    <h1>forms</h1>
+    <p>os forms html sao usados pra coletar o input do user. o input na maioria das vezes é enviado para um serve pra ser processado.</p> 
+    <p>é preciso adicionar um label para o que é desejado adicionar e o título dentro do label, e aí sim adiciona-se o input.</p>
+    <p>o "action" do frame é pra quando houver input, assim o valor do input será enviada para outro local.</p>
+    <p>há outras especificações e particularedades do input, mas é necessario haver conhecimento em <strong>PHP</strong>.</p>
+    <p>nesse documento há a base necessária para criar, pelo menos, uma área de cadastro de rascunho.</p>
+    <form action="">
+        <label for="barradepesquisa" ></label> 
+        <input placeholder="Pesquisar" style="width:400px; height:30px" type="search" 
+        name="barradepesquisa" id="barradepesquisa"> 
+        <input type="submit" name="pesquisa" id="pesquisa"><br>
+        <label for="primeironome">Nome:</label><br>
+        <input required type="text"><br>
+        <label for="sobrenome">Sobrenome:</label> <br>
+        <input required type="text"><br>
+        <label for="senha">Senha:</label><br>
+        <input required maxlength="8" type="password"> <br>
+        <label for="nascimento">Data de nascimento:</label> <br>
+        <input required type="date" name="nascimento" id="nascimento" max="2003-12-31"> <br>
+        <label for="telefone">Telefone (opcional):</label> <br>
+        <input type="tel" name="telefone" id="telefone"> <br>
+        <label for="email">E-mail</label> <br>
+        <input required type="email" name="email" id="email"> <br>
+        <label for="ficheiro">Escolha uma foto de perfil na área ao lado:</label>
+        <input type="file" name="ficheiro" id="ficheiro"> <br>
+        <label for="redesocial">Linkedin</label>
+        <input type="url" name="redesocial" id="linkedin"><br>
+        <label for="redesocial">Facebook</label>
+        <input type="url" name="redesocial" id="facebook"><br>
+        <label for="redesocial">Twitter</label>
+        <input type="url" name="redesocial" id="twitter"><br>
+        <button style="margin-top: 15px; width: 70px; height: 30px;" type="submit">Submit</button>
+    </form> <br>
+    <form action="">
+        <p>Com o que você mais curte programar?</p>
+        <input type="radio" name="linguagemfavoritda" id="html">
+        <label for="html">HTML</label> <br>
+        <input type="radio" name="linguagemfavorita" id="css">
+        <label for="html">CSS</label> <br>
+        <input type="radio" name="linguagemfavorita" id="javascript">
+        <label for="javascript">JavaScript</label> <br>
+        <button style="margin-top: 15px; width: 70px; height: 30px;" type="submit">Submit</button>
+    </form>
+    <form action="">
+        <p>Selecione a sua cor favorita abaixo:</p>
+        <input type="radio" name="corfavorita" id="verde">
+        <label for="verde">Verde</label> <br>
+        <input type="radio" name="corfavorita" id="azul">
+        <label for="azul">Azul</label> <br>
+        <input type="radio" name="corfavorita" id="preto">
+        <label for="preto">Preto</label> <br>
+        <input type="radio" name="corfavorita" id="nenhuma">
+        <label for="nenhuma">Nenhuma das cores citadas</label> <br>
+        <button style="margin-top: 15px; width: 70px; height: 30px;" type="submit">Submit</button>
+    </form>
+</body>
+</html>
