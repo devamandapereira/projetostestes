@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsividade</title>
+</head>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    h1, h2 {
+        font-size: 3vw;
+    }
+    p {
+        font-size: 16px;
+    }
+</style>
+<body>
+    <h1>responsividade</h1>
+    <h2>width:100%</h2>
+    <p>se essa propriedade do css estiver em 100%, a imagem vai ser responsiva</p>
+    <p>ps: desse modo a imagem pode ficar mais larga do que e o tamanho original, a solução é usar a propriedade <strong>max-width:</strong></p>
+
+
+    <img style="max-width: 100%;" src="https://www.w3schools.com/html/img_girl.jpg" alt="">
+
+    <p>é possivel mudar a imagem conforme o tamanho da tela, assim:</p>
+
+    <picture>
+        <source srcset="https://www.w3schools.com/html/img_smallflower.jpg" alt="imagem-pequena" media="(max-width: 600px)">
+        <source srcset="https://www.w3schools.com/html/img_flowers.jpg" alt ="imagem-normal" media="(max-width: 1500px">
+        <source srcset="https://www.w3schools.com/html/img_flowers.jpg"> 
+        <img src="https://www.w3schools.com/html/img_smallflower.jpg" alt="imagem-pequena">
+    </picture>
+
+    <h2>responsividade de texto</h2>
+    <p>para isso, utiliza o <strong>font-size:10vw (numero do tamanho)</strong></p>
+</body>
+</html>

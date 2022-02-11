@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+    <base href=""> <!--aqui fica uma url padrao-->
+</head>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    #verdade:hover {
+        color: red;
+    }
+    #normal {
+        width: 250px;
+        height: 50px;
+        text-align: center;
+        border: solid grey;
+        margin-top: 10px;
+    }
+</style>
+<body id="body">
+    <h1>javascript em html</h1>
+    <p>usos comuns pra js:
+        <ul>
+            <li>manipulação de imagem</li>
+            <li>validação de forma</li>
+            <li>mudanças de conteudo dinamicas</li>
+        </ul>
+    </p>
+
+    <button type="button" onclick="myFunction()">
+       Clique em mim!
+    </button>
+
+    <p id="demo">Esse texto irá mudar.</p>
+
+    <button type="button" onclick=" verdade ()">
+        Clique aqui para ver uma verdade.
+    </button>
+
+    <p id="verdade"></p>
+
+    <button type="button" onclick=" greenbackground ()">
+        Clique aqui para mudar a cor de fundo para verde
+    </button>
+    <br>
+    <button onclick=" pinkbackground ()">
+        Clique aqui para mudar a cor de fundo para rosa
+    </button> 
+    <br>
+    <button onclick="whitebackground ()">
+        Clique aqui para mudar a cor de fundo para a cor padrão
+    </button>
+    <br>
+    <button onclick="bigfontsize ()">
+        Clique aqui para deixar a fonte enorme!!! (cuidado)
+    </button>
+    <br>
+    <button onclick="normalfontsize ()">
+        Clique aqui para deixar a fonte normal
+    </button>
+    <br>
+    <button onclick="diversasmudancas ()">
+        Clique aqui para uma surpresa
+    </button>
+    <br>
+    <button id="normal" onclick="normal()">
+        Voltar ao normal
+    </button>
+    <script>
+        function myFunction () {
+        document.getElementById ("demo").innerHTML ="Isso é JavaScript!";
+        }
+
+        function verdade () {
+            document.getElementById ("verdade").innerHTML = "bolsonaro é burro";
+        }
+
+        function greenbackground () {
+            document.getElementById ("body").style.backgroundColor = "green";
+        }
+        function pinkbackground () {
+            document.getElementById ("body").style.backgroundColor = "pink";
+        }
+        function whitebackground () {
+            document.getElementById ("body").style.backgroundColor = "white";
+        }
+        function bigfontsize () {
+            document.getElementById ("body").style.fontSize = "50px";
+        }
+        function normalfontsize () {
+            document.getElementById ("body").style.fontSize = "16px";
+        }
+        function diversasmudancas () {
+            document.getElementById ("body").style.fontSize = "60px";
+            document.getElementById ("body").style.backgroundColor = "blue";
+            document.getElementById ("body").style.color = "red";
+        }
+        function normal () {
+            document.getElementById ("body").style.fontSize = "16px";
+            document.getElementById ("body").style.backgroundColor ="white";
+            document.getElementById ("body").style.color="black";
+        }
+    </script>
+    <noscript>Desculpe, seu navegador não suporta JavaScript :(</noscript> <!--isso aparece num navegador que nao suporta js-->
+</body>
+</html>
